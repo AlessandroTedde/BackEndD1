@@ -30,5 +30,19 @@ namespace BackEndD1
             get { return _job; }
             set { _job = value; }
         }
+        public string retirement(string Name, string Surname, int age)
+        {
+            if (age > 65) 
+            {
+                return $"{Name} {Surname} is next to retirement";
+            } else if (age < 18)
+            {
+                return $"{Name} {Surname} is too young, hence unemployable";
+            }
+            else
+            {
+                return $"{Name} {Surname} is not close to retirement";
+            }
+        }
     }
 }

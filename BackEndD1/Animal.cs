@@ -30,5 +30,10 @@ namespace BackEndD1
             get { return _habitat; }
             set { _habitat = value; }
         }
+
+        public void weight(string animal, int weight)
+        {
+            Console.WriteLine($"The {animal} weighs {weight}kg on average");
+        }
     }
 }

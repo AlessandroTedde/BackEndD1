@@ -24,11 +24,15 @@ namespace BackEndD1
         }
 
 
-        private string _hp;
-        public string Hp
+        private int _hp;
+        public int Hp
         {
             get { return _hp; }
             set { _hp = value; }
+        }
+        public void maxSpeed(string Manufacturer, string Model, int Speed)
+        {
+            Console.WriteLine($"{Manufacturer} {Model} can reach a max speed of {Speed}Km/h");
         }
     }
 }
